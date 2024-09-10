@@ -26,6 +26,7 @@
 
 .info_container_left{ 
     p{
+        opacity: 1;
         margin-top: 10px;
         color: var(--Greys-Light-grey, #646D70);
         font-family: Rubik;
@@ -47,17 +48,43 @@
     font-weight: 900;
     line-height: normal;
 }
-
 .info_container_left{
-    button{
-        width: 90px;
-        height: 34px;
-        flex-shrink: 0;
-        margin-top: 41px;
-        border-radius: 4px;
-        border: 1px solid var(--Greys-Light-grey, #646D70);
+    a{
+        color: #606B74;
+      
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Label / Medium */
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 }
+.info_container_left {
+    a {
+      display: inline-block; /* Ensures width and height are applied */
+      width: 90px;
+      height: 34px;
+      margin-top: 41px;
+      border-radius: 4px;
+      border: 1px solid var(--Greys-Light-grey, #646D70);
+      text-align: center; /* Centers text horizontally */
+      line-height: 34px; /* Centers text vertically */
+      color: #606B74; /* Default color for the link */
+      text-decoration: none; /* Removes default underline */
+  
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #606B74; 
+        color: #FFF;
+        transform: scale(1.05);    
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      }
+    }
+  }
 
 .info .info_container_right{
     margin-left: auto;

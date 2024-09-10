@@ -1,10 +1,15 @@
+
+
 .hero {
     margin: auto;
     padding-top: 1px;
  
-    height: 636px;
-    width: 1000px;
+    height: 750px;
+    width: 100%;
     background: url(/images/Bitmap.png) lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: cover;       
+    background-position: center;   
+       
 }
 
 
@@ -43,6 +48,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 252px;
     gap: 40px;
     a{
         color: #FFF;
@@ -55,25 +61,35 @@
     }
 }
 
-.hero .container .header_nav .header-nav-item-button{
-    button{
-    width: 90px;
-    height: 34px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: var(--Greys-White, #FFF);
-    color: #606B74;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
 
-    /* Label / Medium */
-    font-family: Rubik;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-}
+.hero .container .header_nav .header-nav-item-button {
+    a {
+      font-feature-settings: 'liga' off, 'clig' off;
+      color: #606B74;
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      
+      display: inline-block; /* Makes it behave more like a button */
+      width: 90px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px; /* Vertical centering */
+      border-radius: 4px;
+      background: var(--Greys-White, #FFF);
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #606B74;
+        color: #FFF;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  
 
 .container_hero{
     display: flex;

@@ -24,20 +24,6 @@
     
 
     p{
-        color: var(--Greys-Light-grey, #646D70);
-        font-feature-settings: 'liga' off, 'clig' off;
-
-        /* Paragraph / Medium */
-        font-family: Rubik;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px; /* 183.333% */
-        
-        
-    }
-    span{
-        
         color: var(--Color-Dark-green, #222F33);
         font-feature-settings: 'liga' off, 'clig' off;
 
@@ -47,6 +33,22 @@
         font-style: normal;
         font-weight: 900;
         line-height: normal;
+        
+        
+    }
+    span{
+        
+        color: var(--Greys-Light-grey, #646D70);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Paragraph / Medium */
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 183.333% */
+        opacity: 0.7;
+       
     }
 }
 
@@ -62,26 +64,30 @@
 
 .list_container_items_right{
     p{
-        color: var(--Greys-Light-grey, #646D70);
-        font-feature-settings: 'liga' off, 'clig' off;
-
-/* Paragraph / Medium */
-        font-family: Rubik;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px; /* 183.333% */
-    }
-    span{
         color: var(--Color-Dark-green, #222F33);
         font-feature-settings: 'liga' off, 'clig' off;
 
-/* Headers / H3 */
+        /* Headers / H3 */
         font-family: Merriweather;
         font-size: 18px;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
+        
+      
+    }
+    span{
+        color: var(--Greys-Light-grey, #646D70);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Paragraph / Medium */
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 183.333% */
+        opacity: 0.7;
+
         
     }
 }
@@ -90,3 +96,5 @@
     margin-bottom: 37px;
 
 }
+
+
