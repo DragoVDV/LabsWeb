@@ -1,9 +1,10 @@
 
 
 .hero {
-    margin: auto;
-    padding-top: 1px;
- 
+    display: flex;
+    justify-content: center;
+    min-width: 1000px;
+    flex-shrink: 0;
     height: 750px;
     width: 100%;
     background: url(/images/Bitmap.png) lightgray 0px 0px / 100% 100% no-repeat;
@@ -12,10 +13,16 @@
        
 }
 
+.container{
+    flex-direction: column;
+    
+    gap: 200px;
+    display: flex;
+}
 
 
 .hero .container .header_nav {
-    margin: auto;
+   
        
     align-items: center;
     display: flex;
@@ -92,9 +99,8 @@
   
 
 .container_hero{
+    gap: 132px;
     display: flex;
-    margin: auto;
-    margin-top: 119.17px;
     width: 808px;
     
 }
@@ -107,16 +113,9 @@
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
-    span{color: #FFF;
-        font-feature-settings: 'liga' off, 'clig' off;
-        
-        /* Headers / H2 */
-        font-family: Merriweather;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;}
-    p{
+    
+    span{
+        opacity: 0.8;
         color: #FFF;
         font-feature-settings: 'liga' off, 'clig' off;
 
@@ -127,11 +126,22 @@
         font-weight: 500;
         line-height: normal;
     }
+    p{
+        
+        color: #FFF;
+        font-feature-settings: 'liga' off, 'clig' off;
+        
+        /* Headers / H2 */
+        font-family: Merriweather;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;}
 }
 
 
 .container_hero .container_hero_right {
-    margin: auto;
+   
    
     display: inline-flex;
     justify-content: flex-end;
@@ -143,7 +153,7 @@
     color: #FFF;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Rubik;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

@@ -1,18 +1,24 @@
 .innovative{
+    min-width: 1000px;
     margin: auto;
     width: 100%;
     height: 270px;
     background: #26353B;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
 
 }
 
 .innovative .container_innovative{
     width: 808px;
-    height: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-shrink: 0;
-    margin: auto;
-    margin-top: 66px;
+   
+   
     
 }
 
