@@ -1,4 +1,4 @@
-My project for lab 3
+My project for lab 5
 
 globall.css - file for reset styles
 
