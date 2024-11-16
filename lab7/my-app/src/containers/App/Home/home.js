@@ -55,7 +55,7 @@ const Home = () => {
         ))}
       </CardWrapper>
 
-      {/* Кнопка Show More / Show Less */}
+     
       {data.length > 3 && (
         <CenteredButton size="large" onClick={() => setShowAll(!showAll)}>
           {showAll ? "Show Less" : "Show More"}
@@ -70,3 +70,4 @@ const Home = () => {
 };
 
 export default Home;
+  
